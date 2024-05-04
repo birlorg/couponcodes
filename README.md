@@ -14,7 +14,11 @@ CouponCodes are designed to be distributed in printed form and typed into a web 
 - The code generation algorithm avoids 'undesirable' codes. For example any code in which transposed characters happen to result in a valid checkdigit will be skipped. Any generated part which happens to spell an 'inappropriate' 4-letter word (e.g.: 'P00P') will also be skipped.
 - Codes can be generated and validated on the server
 
+## Meta
+
 This python implementation is not written or endorsed by Dan Mclean.
+
+PyPi page: https://pypi.org/project/cccodes/
 
 Known bugs/shortcomings compared to upstream:
 
@@ -25,4 +29,14 @@ Known bugs/shortcomings compared to upstream:
 All other shortcomings are bugs and you should file issues.
 Patches to fix the known shortcomings welcome.
 
-PyPi page: https://pypi.org/project/cccodes/
+## Usage
+
+```python
+pip install cccodes
+
+# Generate a code:
+python3 -c "import cccodes;print(cccodes.generate())"
+
+# validate a code:
+python3 -c "import cccodes;print(cccodes.validate('T13P-2LMP-E0B5'))"
+```
