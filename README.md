@@ -18,8 +18,8 @@ CouponCodes are designed to be distributed in printed form and typed into a web 
 
 This python implementation is not written or endorsed by Dan Mclean.
 
-PyPi page: https://pypi.org/project/cccodes/
-Githup page: https://github.com/birlorg/couponcodes
+- PyPi page: https://pypi.org/project/cccodes/
+- Githup page: https://github.com/birlorg/couponcodes
 
 Known bugs/shortcomings compared to upstream:
 
