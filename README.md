@@ -27,7 +27,7 @@ Known bugs/shortcomings compared to upstream:
 - You can not select your own plaintext, it will only generate new random codes.
 - This code has been barely tested and not audited, security and fit for purpose is your problem.
 
-All other shortcomings are bugs and you should file issues.
+All other shortcomings are bugs and you should file issues & pull requests.
 Patches to fix the known shortcomings welcome.
 
 ## Usage
