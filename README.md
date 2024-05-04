@@ -39,7 +39,7 @@ python3 -c "import cccodes;print(cccodes.generate())"
 66WUX-FJ5XA-6WUBU
 
 # validate a code:
-python3 -c "import cccodes;print(cccodes.validate('66WUX-FJ5XA-6WUBU'))"
+python3 -c "import cccodes;print(cccodes.validate('66wUX-FJ5XA-6WUBU'))"
 True
 
 # invalid check digit in 1st part from above code.
@@ -49,5 +49,6 @@ False
 # if you are storing the codes that are generated, so you can prevent re-use or whatever:
 python3 -c "import cccodes;print(cccodes.normalize('tI3P-SLMP-E0B5'))"
 T13P-5LMP-E0B5
+#FYI: don't worry, validate will call normalize() for you, so you don't have to.
 
 ```
