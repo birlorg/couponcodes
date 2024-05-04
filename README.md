@@ -24,3 +24,5 @@ Known bugs/shortcomings compared to upstream:
 
 All other shortcomings are bugs and you should file issues.
 Patches to fix the known shortcomings welcome.
+
+PyPi page: https://pypi.org/project/cccodes/
