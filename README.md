@@ -36,7 +36,18 @@ pip install cccodes
 
 # Generate a code:
 python3 -c "import cccodes;print(cccodes.generate())"
+66WUX-FJ5XA-6WUBU
 
 # validate a code:
-python3 -c "import cccodes;print(cccodes.validate('T13P-2LMP-E0B5'))"
+python3 -c "import cccodes;print(cccodes.validate('66WUX-FJ5XA-6WUBU'))"
+True
+
+# invalid check digit in 1st part from above code.
+python3 -c "import cccodes;print(cccodes.validate('66WU7-FJ5XA-6WUBU'))"
+False
+
+# if you are storing the codes that are generated, so you can prevent re-use or whatever:
+python3 -c "import cccodes;print(cccodes.normalize('tI3P-SLMP-E0B5'))"
+T13P-5LMP-E0B5
+
 ```
